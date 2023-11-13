@@ -20,5 +20,6 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this@MainActivity, NextActivity::class.java)
         intent.putExtra("name",binding.editText.text.toString())
         startActivity(intent)
+        finish() //activity intent ile cagirlirsa onCreate calistirilir Ama bu hafızaya kaydediyor o yüzden finishle activity i kapatıyoruz
     }
 }
