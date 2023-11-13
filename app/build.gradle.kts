@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.bengisusahin.intent"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.bengisusahin.intent"
@@ -32,6 +32,11 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+    }
+    buildFeatures {
+
+        viewBinding = true
+
     }
 }
 

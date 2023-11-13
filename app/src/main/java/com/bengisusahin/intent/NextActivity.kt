@@ -2,20 +2,17 @@ package com.bengisusahin.intent
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import com.bengisusahin.intent.databinding.ActivityMainBinding
+import com.bengisusahin.intent.databinding.ActivityNextBinding
 
-class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+class NextActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityNextBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityNextBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
     }
 
-    fun next(view: View){
 
-    }
 }
