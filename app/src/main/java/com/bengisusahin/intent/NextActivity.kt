@@ -12,6 +12,11 @@ class NextActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityNextBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val intentFromMain = intent
+        val name = intentFromMain.getStringExtra("name")
+        binding.nameText.text = "Name: ${name}"
+
     }
 
 
